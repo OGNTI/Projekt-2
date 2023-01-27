@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaem</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="get-names-menu">
+        <p>Names</p>
+        <form class="get-names-form">
+            <input type="text" value="Player1" class="red player-name1">
+            <input type="text" value="Player2" class="blue player-name2">
+            <button type="button" class="set-names">Set Names</button>
+        </form>
+    </div>
+    <div class="hidden choose-startunits-menu">
+        <p>Choose your starting units</p>
+        <span class="red display-names">names here</span>
+        <p class="selected0-2">selected <span class="selected-label">0</span>/3 </p>
+        <div class="select-startunits-menu">
+            <div class="available-start-units">
+                <div class="pikemen select-units-div">
+                    <div>
+                        <img src="./img/Pikemen.png" alt="pike infantry">
+                        <p class="unit-name">Pikemen</p>
+                    </div>
+                    <div class="plus-minus">
+                        <button type="button" class="plus-button" data-unit-type="Pikemen">+</button>
+                        <button type="button" class="minus-button" data-unit-type="Pikemen">-</button>
+                    </div>
+                </div>
+                <div class="archers select-units-div">
+                    <div>
+                        <img src="./img/Archer.png" alt="archers">
+                        <p class="unit-name">Archers</p>
+                    </div>
+                    <div class="plus-minus">
+                        <button type="button" class="plus-button" data-unit-type="Archer">+</button>
+                        <button type="button" class="minus-button" data-unit-type="Archer">-</button>
+                    </div>
+                </div>
+                <div class="cavalry select-units-div">
+                    <div>
+                        <img src="./img/Cavalry.png" alt="Cavalry">
+                        <p class="unit-name">Cavalry</p>
+                    </div>
+                    <div class="plus-minus">
+                        <button type="button" class="plus-button" data-unit-type="Cavalry">+</button>
+                        <button type="button" class="minus-button" data-unit-type="Cavalry">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="selected-start-units">
+
+            </div>
+        </div>
+        <button type="button" class="done-selecting-button">Done selecting</button>
+        <button type="button" class="hidden finish-selecting-button">Done selecting</button>
+    </div>
+    <div class="hidden actual-game">
+        <div class="player1-side side">
+            <span class="player1-side-name side-name">nerd1</span>
+            <div class="player1-side-stuff side-stuff">
+                <div class="player1-owned side-owned">
+
+                </div>
+                <div class="player1-battlefield battlefield">
+                    <div class="position player1-position1">
+                        <div class="unit" id="box" draggable="true"></div>
+                    </div>
+                    <div class="position player1-position2">
+
+                    </div>
+                    <div class="position player1-position3">
+
+                    </div>
+                    <div class="position player1-position4">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="player2-side side">
+            <span class="player2-side-name side-name">nerd2</span>
+            <div class="player2-side-stuff side-stuff">
+                <div class="player2-battlefield battlefield">
+                    <div class="position player2-position1">
+
+                    </div>
+                    <div class="position player2-position2">
+
+                    </div>
+                    <div class="position player2-position3">
+
+                    </div>
+                    <div class="position player2-position4">
+
+                    </div>
+                </div>
+                <div class="player2-owned side-owned">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

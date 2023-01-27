@@ -1,0 +1,188 @@
+body {
+    font-size: 25px;
+}
+
+.start-menu {
+    display: grid;
+    margin: auto;
+    margin-top: 15vh;
+    text-align: center;
+    width: 25%;
+    border-radius: 25px;
+    padding-bottom: 5vh;
+    background-color: gray;
+}
+
+.start-menu-button {
+    margin: auto;
+    padding: 10px;
+    width: 75%;
+}
+
+.start-menu-info {
+    font-size: 15px;
+}
+
+.get-names-menu {
+    margin: auto;
+    margin-top: 20vh;
+    width: 25%;
+    padding: 1vh;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: gray;
+}
+
+.get-names-form {
+    display: grid;
+    padding: 20px;
+}
+
+.set-names {
+    margin: auto;
+    margin-top: 5%;
+    width: 50%;
+}
+
+.choose-startunits-menu {
+    margin: auto;
+    margin-top: 1vh;
+    width: 40%;
+    padding: 1vh;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: gray;
+}
+
+.select-startunits-menu {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.select-startunits-menu img {
+    height: 120px;
+}
+
+.selected0-2 {
+    margin-left: 25vw;
+    margin-top: 1vh;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.unit-name {
+    margin: 0;
+}
+
+.select-units-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.plus-minus {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 1vh;
+    font-size: 25px;
+    margin: auto;
+}
+
+.selected-start-units {
+    align-items: center;
+}
+
+.selected-start-units img {
+    height: 80px;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.actual-game {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5vh;
+}
+
+.actual-game img {
+    height: 100px;
+}
+
+.side {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    margin: auto;
+}
+
+.side-name {
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-radius: 20px;
+    margin: auto;
+    background-color: grey;
+}
+
+.side-stuff {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: grey;
+    padding: 3vw;
+    border-radius: 30px;
+    height: 100%;
+}
+
+.side-owned {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.side-owned img {
+    margin: auto;
+}
+
+.battlefield {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    width: 20vw;
+}
+
+.position {
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.drag-over {
+    border: dashed 3px red;
+}
+
+.unit {
+    height: 50px;
+    width: 50px;
+    background-color: lightgray;
+}
+
+.hidden {
+    display: none;
+}
