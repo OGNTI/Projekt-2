@@ -1,13 +1,11 @@
 // 2 players 1 device, possibly 1 player against computer
 // 2 battlefields, choose where to place units on your side in turns
-// first player no see second players battlefield and reverse, only show battlefields after both players played
-// different types of units, start with same units, formations have a certain amount of troops
-// if all troops in a formation dies, lose unit
-// get gold from amount of troops killed, buy units/upgrades? with gold
-// if lose two times in a row, get steam sale on basic units, so have chance of survival
-// play until one player loses all units
-// Starting menu- play, how to play, maybe settings? background color +stuff
-// toggle hidden on how to play tab
+// first player doesn't see second players battlefield and reverse, only show battlefields after both players played
+// different types of units, start with same units, units have health
+// get gold from doing damage, buy units/upgrades? with gold
+// if lose two times in a row, get steam sale on basic units, chance of survival
+// play best of 5 battles
+
 
 let startUnitsMenu = document.querySelector(".choose-startunits-menu");
 let displayNames = document.querySelector(".display-names");
@@ -235,10 +233,6 @@ function actualGameScreen(){
         }
     }
 }
-
-const unit = document.querySelector('.unit');
-
-unit.addEventListener('dragstart', dragStart);
 
 function dragStart(e) {
     console.log('drag starts...');
